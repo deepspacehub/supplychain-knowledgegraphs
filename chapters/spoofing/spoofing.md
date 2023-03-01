@@ -1,4 +1,6 @@
 # Spoofing
+![Man in the Middle](man_in_the_middle_steampunk.png)
+<hr>
 
 - [Spoofing](#spoofing)
   - [Man-in-the-Middle Attack](#man-in-the-middle-attack)

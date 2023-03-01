@@ -1,4 +1,6 @@
 # Scanner
+![Scanner](scanner_steampunk.png)
+<hr>
 
 - [Scanner](#scanner)
   - [Definition](#definition)

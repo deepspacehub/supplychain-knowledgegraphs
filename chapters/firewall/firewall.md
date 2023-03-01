@@ -1,4 +1,7 @@
 # Firewalls
+![Firewall](firewall_steampunk.png)
+<hr>
+
 - [Firewalls](#firewalls)
   - [Definition](#definition)
   - [Erstellen einer einfachen Firewall in Python](#erstellen-einer-einfachen-firewall-in-python)
