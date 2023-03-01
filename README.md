@@ -14,7 +14,8 @@
     - [Was wäre ein gutes Konzept zur Nutzung von Knowledge-Graphs für die Cybersicherheit, insbesondere im Hinblick auf die Lieferkette und das Lieferkettengesetz?](#was-wäre-ein-gutes-konzept-zur-nutzung-von-knowledge-graphs-für-die-cybersicherheit-insbesondere-im-hinblick-auf-die-lieferkette-und-das-lieferkettengesetz)
   - [Codebeispiele](#codebeispiele)
   - [Docker Device Emulation](#docker-device-emulation)
-  - [Firewalls](#firewalls)
+  - [Scanner](#scanner)
+  - [Spoofing](#spoofing)
 
 <br>
 <hr>
@@ -115,5 +116,10 @@ Die Device-Emulation in Docker wird in [diesem](./chapters/docker-device-emulati
 
 <br>
 
-## Firewalls
-Firewalls werden in [diesem](./chapters/firewall.md) Kapitel erklärt.
+## Scanner
+Scanner werden in [diesem](./chapters/scanner.md) Kapitel erklärt.
+
+<br>
+
+## Spoofing
+Spoofing wird in [diesem](./chapters/spoofing.md) Kapitel erklärt.
