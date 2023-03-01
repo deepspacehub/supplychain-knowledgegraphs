@@ -1,0 +1,2 @@
+docker build -t my-load-balancer .
+docker run -p 80:80 my-load-balancer

@@ -1,0 +1,2 @@
+docker build -t multi-device-emulation .
+docker run -p 80:80 multi-device-emulation

@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  nginx:
+    build: .
+    ports:
+      - "80:80"
+    depends_on:
+      - app1
+      - app2
+      - app3
+
+  app1:
+    image: python:3-alpine
+    command: python app.py
+    volumes:
+      - ./app1:/app
+    working_dir: /app
+
+  app2:
+    image: python:3-alpine
+    command: python app.py
+    volumes:
+      - ./app2:/app
+    working_dir: /app
+
+  app3:
+    image: python:3-alpine
+    command: python app.py
+    volumes:
+      - ./app3:/app
+    working_dir: /app

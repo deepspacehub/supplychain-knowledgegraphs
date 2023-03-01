@@ -20,6 +20,7 @@
 <br>
 <hr>
 <br>
+<div style="page-break-after: always;"></div>
 
 ## Generelle Übersicht
 <br>
@@ -42,6 +43,7 @@ Da die Lieferketten immer komplexer und vernetzter werden, ist es wahrscheinlich
 
 <br>
 <br>
+<div style="page-break-after: always;"></div>
 
 ## SIEM vs Knowledge-Graphs
 ### Unterschied zwischen einem SIEM und Knowledge-Graphs in der Cybersicherheit
@@ -107,19 +109,19 @@ Insgesamt könnte die Nutzung von Knowledge-Graphs auf diese Weise Unternehmen h
 <br>
 
 ## Codebeispiele
-Codebeispiele für Security, Prognosen und Quarantäne von Geräten sind in [diesem](./chapters/codesamples.md) Kapitel erklärt.
+Codebeispiele für Security, Prognosen und Quarantäne von Geräten sind in [diesem](./chapters/codesamples/codesamples.md) Kapitel erklärt.
 
 <br>
 
 ## Docker Device Emulation
-Die Device-Emulation in Docker wird in [diesem](./chapters/docker-device-emulation.md) Kapitel erklärt.
+Die Device-Emulation in Docker wird in [diesem](./chapters/docker-device-emulation/docker-device-emulation.md) Kapitel erklärt.
 
 <br>
 
 ## Scanner
-Scanner werden in [diesem](./chapters/scanner.md) Kapitel erklärt.
+Scanner werden in [diesem](./chapters/scanner/scanner.md) Kapitel erklärt.
 
 <br>
 
 ## Spoofing
-Spoofing wird in [diesem](./chapters/spoofing.md) Kapitel erklärt.
+Spoofing wird in [diesem](./chapters/spoofing/spoofing.md) Kapitel erklärt.
