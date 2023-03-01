@@ -3,6 +3,7 @@
   - [Definition](#definition)
   - [Erstellen einer einfachen Firewall in Python](#erstellen-einer-einfachen-firewall-in-python)
     - [Docker-Container mit Firewall verbinden](#docker-container-mit-firewall-verbinden)
+    - [Traffic über Firewall-Container](#traffic-über-firewall-container)
 
 <br>
 <hr>
@@ -106,3 +107,32 @@ docker exec app1 route add default gw 172.18.0.2
 docker exec app2 route add default gw 172.18.0.2
 ```
 Dadurch wird der gesamte Netzwerkverkehr von den Anwendungscontainern durch den Firewall-Container geleitet. Der Firewall-Container kann dann den Verkehr analysieren und ihn auf der Grundlage Ihrer Firewall-Regeln entweder zulassen oder blockieren.
+
+<br>
+
+### Traffic über Firewall-Container
+Um den Datenverkehr über die Firewall des Docker-Containers zu den mit ihm verbundenen Containern zu leiten, können Sie die Netzwerkfunktionen von Docker nutzen.
+
+Hier ist ein Beispiel:
+
+1. Erstellen eines Docker-Netzwerks:
+```command
+docker network create my-network
+```
+2. Starten des Firewall-Containers mit der Option `--network`, um ihn mit dem Netzwerk zu verbinden:
+```command
+docker run --name firewall --network my-network -d firewall-image
+```
+3. Starten des/der Anwendungscontainer(s) mit der Option `--network`, um ihn/sie mit dem Netzwerk zu verbinden:
+```command
+docker run --name app --network my-network -d app-image
+```
+4. Konfigurieren der Firewall sodass sie den Datenverkehr zwischen dem/den Anwendungscontainer(n) und der Außenwelt leitet:
+```command
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to-destination app:80
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+```
+
+Dadurch wird der über Port 80 eingehende Datenverkehr an den App-Container im Docker-Netzwerk my-network umgeleitet und NAT auf den vom App-Container ausgehenden Datenverkehr nach außen angewendet.
+
+Beachten Sie, dass die spezifischen iptables-Regeln, die Sie anwenden müssen, von den Anforderungen Ihrer Firewall-Anwendung abhängen.
