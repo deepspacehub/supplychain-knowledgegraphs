@@ -1,5 +1,5 @@
 # Knowledgegraphs in der Supply-Chain
-![Supply Chains](supply_chains_steampunk.png)
+![Supply Chains](./pictures/chapters/supply_chains_steampunk.png)
 <hr>
 
 ## Contents

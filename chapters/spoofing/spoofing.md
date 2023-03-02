@@ -1,5 +1,5 @@
 # Spoofing
-![Man in the Middle](man_in_the_middle_steampunk.png)
+![Man in the Middle](./../../pictures/chapters/man_in_the_middle_steampunk.png)
 <hr>
 
 - [Spoofing](#spoofing)

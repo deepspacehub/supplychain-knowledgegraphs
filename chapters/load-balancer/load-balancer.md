@@ -1,5 +1,5 @@
 # Load Balancer
-![Load Balancer](load_balancer_steampunk.png)
+![Load Balancer](./../../pictures/chapters/load_balancer_steampunk.png)
 <hr>
 
 - [Load Balancer](#load-balancer)

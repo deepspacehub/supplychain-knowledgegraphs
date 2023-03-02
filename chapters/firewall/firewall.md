@@ -1,5 +1,5 @@
 # Firewalls
-![Firewall](firewall_steampunk.png)
+![Firewall](./../../pictures/chapters/firewall_steampunk.png)
 <hr>
 
 - [Firewalls](#firewalls)

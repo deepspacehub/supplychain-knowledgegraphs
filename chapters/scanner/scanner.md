@@ -1,5 +1,5 @@
 # Scanner
-![Scanner](scanner_steampunk.png)
+![Scanner](./../../pictures/chapters/scanner_steampunk.png)
 <hr>
 
 - [Scanner](#scanner)
